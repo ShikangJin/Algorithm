@@ -26,32 +26,32 @@ import java.util.StringBuilder;
 // Time Complexity: O(N)  N = total character number in String array  
 // Space Complexity: O(M) M = size of HashSet 
 public class UniqueEmailAddress {
-  public static int numUniqueEmails(String[] emails) {
-    // parse each string and use a set to store the result in order to dedup
-    if (emails == null || emails.length == 0) {
-      return 0;
-    }
-    Set<String> set = new HashSet<>();
-    for (String email : emails) {
-      StringBuilder sb = new StringBuilder();
-      boolean domain = false;
-      for (int i = 0; i < email.length(); i++) {
-        char curCh = email.charAt(i);
-        if (domain) {
-          sb.append(curCh);
-          continue;
+    public static int numUniqueEmails(String[] emails) {
+      // parse each string and use a set to store the result in order to dedup
+        if (emails == null || emails.length == 0) {
+            return 0;
         }
-        switch(curCh) {
-          default: sb.append(curCh); break;
-          case '+': while (i + 1 < email.length() && email.charAt(i + 1) != '@') i++; break;
-          case '@': sb.append(curCh); domain = true; break;
-          case '.': break;
+        Set<String> set = new HashSet<>();
+        for (String email : emails) {
+            StringBuilder sb = new StringBuilder();
+            boolean domain = false;
+            for (int i = 0; i < email.length(); i++) {
+                char curCh = email.charAt(i);
+                if (domain) {
+                    sb.append(curCh);
+                    continue;
+                }
+                switch(curCh) {
+                    default: sb.append(curCh); break;
+                    case '+': while (i + 1 < email.length() && email.charAt(i + 1) != '@') i++; break;
+                    case '@': sb.append(curCh); domain = true; break;
+                    case '.': break;
+                }
+            }
+            set.add(sb.toString());
         }
-      }
-      set.add(sb.toString());
+        return set.size();
     }
-    return set.size();
-  }
 }
 
 
