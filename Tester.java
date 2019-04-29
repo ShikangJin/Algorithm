@@ -4,9 +4,8 @@ class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
       
-        int[][] input = {{1,1,0}, {1,0,1}, {0,0,0}};
-        int[][] output = FlippingAnImage.flipAndInvertImage(input);
-        printMatrix(output);
+        String input = "UUUD";
+        System.out.println(RobotReturnToOrigin.judgeCircle(input));
     }  
 
     private static void printMatrix(int[][] output) {
