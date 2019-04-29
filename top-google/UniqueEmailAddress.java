@@ -23,6 +23,8 @@ import java.util.Set;
 import java.util.HashSet;
 import java.util.StringBuilder;
 
+// Time Complexity: O(N)  N = total character number in String array  
+// Space Complexity: O(M) M = size of HashSet 
 public class UniqueEmailAddress {
   public static int numUniqueEmails(String[] emails) {
     // parse each string and use a set to store the result in order to dedup
