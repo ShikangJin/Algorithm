@@ -4,8 +4,8 @@ class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
       
-        int[] input = {4,3,2,7,8,2,3,1};
-        printList(FindAllNumbersDisappearedInAnArray.findDisappearedNumbers(input));
+        String input = "leetcode";
+        System.out.println(FirstUniqueCharacterInAString.firstUniqChar(input));
     }  
 
     private static void printMatrix(int[][] output) {
