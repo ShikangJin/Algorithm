@@ -5,7 +5,7 @@ class Tester {
         System.out.println("test start");
       
         String input = "leetcode";
-        System.out.println(FirstUniqueCharacterInAString.firstUniqChar(input));
+        System.out.println(AddStrings.addStrings("111", "1991"));
     }  
 
     private static void printMatrix(int[][] output) {
