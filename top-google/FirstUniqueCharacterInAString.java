@@ -1,5 +1,3 @@
-import java.util.Map;
-
 /**
     First Unique Character in a String
 
