@@ -4,8 +4,8 @@ class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
       
-        String input = "leetcode";
-        System.out.println(AddStrings.addStrings("111", "1991"));
+        // String input = "leetcode";
+        System.out.println(PowerOfTwo.isPowerOfTwo(Integer.MAX_VALUE));
     }  
 
     private static void printMatrix(int[][] output) {
