@@ -5,7 +5,7 @@ class Tester {
         System.out.println("test start");
       
         // String input = "leetcode";
-        System.out.println(PowerOfTwo.isPowerOfTwo(Integer.MAX_VALUE));
+        System.out.println(PowerOfThree.isPowerOfThree(81));
     }  
 
     private static void printMatrix(int[][] output) {
