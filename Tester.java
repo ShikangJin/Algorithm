@@ -5,7 +5,7 @@ class Tester {
         System.out.println("test start");
       
         // String input = "leetcode";
-        System.out.println(PowerOfThree.isPowerOfThree(81));
+        System.out.println(ReverseVowelsOfAString.reverseVowels("aA"));
     }  
 
     private static void printMatrix(int[][] output) {
