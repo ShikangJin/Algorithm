@@ -4,8 +4,8 @@ class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
 
-        int[] input = {73, 74, 75, 71, 69, 72, 76, 73};
-        printArray(DailyTemperatures.dailyTemperatures(input));
+        int[][] input = {{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}};
+        printMatrix(QueueReconstructionByHeight.reconstructQueue(input));
         // System.out.println(ValidParentheses.isValid("{[()]}"));
     }  
 
