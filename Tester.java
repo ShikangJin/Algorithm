@@ -3,9 +3,10 @@ import java.util.*;
 class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
-      
-        // int[] input = {9,9,8};
-        System.out.println(ValidParentheses.isValid("{[()]}"));
+
+        int[] input = {73, 74, 75, 71, 69, 72, 76, 73};
+        printArray(DailyTemperatures.dailyTemperatures(input));
+        // System.out.println(ValidParentheses.isValid("{[()]}"));
     }  
 
     private static void printArray(int[] output) {
