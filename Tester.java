@@ -4,8 +4,8 @@ class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
         Tester tester = new Tester();
-
-        tester.printList(GenerateParentheses.generateParenthesis(3));
+        int[] input = {3, 10, 5, 25, 2, 8};
+        System.out.print(MaximumXOROfTwoNumbersInAnArray.findMaximumXOR(input));
         // int[][] input = {{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}};
         // printMatrix(QueueReconstructionByHeight.reconstructQueue(input));
         // System.out.println(ValidParentheses.isValid("{[()]}"));
