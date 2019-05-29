@@ -14,7 +14,8 @@
 
 // Explanation: The maximum result is 5 ^ 25 = 28.
 
-// Time Complexity: O(32 * N) + O(32 * N) = O(N)     the height of bit tree: 32
+// Time Complexity: O(32 * N) + O(32 * N) = O(N)     N = length of input array 
+//                                                   32 = height of bit tree
 // Space Complexity: O(2^32)    worst case
 public class MaximumXOROfTwoNumbersInAnArray {
     // build a bit tree so for each number, we can find a best fit number from the tree in O(log32)
