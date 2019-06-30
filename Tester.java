@@ -4,11 +4,11 @@ class Tester {
     public static void main(String[] args) {
         System.out.println("test start");
         Tester tester = new Tester();
-        int[] input = {0,1,1,1,1,1};
+        // int[] input = {0,1,1,1,1,1};
         // tester.printList(BinaryPrefixDivisibleBy5.prefixesDivBy5(input));
-        // int[][] input = {{7,0}, {4,4}, {7,1}, {5,0}, {6,1}, {5,2}};
-        // printMatrix(QueueReconstructionByHeight.reconstructQueue(input));
-        System.out.println(RemoveOutermostParentheses.removeOuterParentheses("(()())(())(()(()))"));
+        int[][] input = {{1,2},{2,0},{0,0}};
+        // tester.printMatrix(MatrixCellsInDistanceOrder.allCellsDistOrder(2, 3, 1, 2));
+        System.out.println(RobotBoundedInCircle.isRobotBounded("GL"));
     }  
 
     private void printArray(int[] output) {
